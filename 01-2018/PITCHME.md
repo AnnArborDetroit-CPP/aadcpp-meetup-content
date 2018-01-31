@@ -28,9 +28,11 @@
 * It's about sharing code
 ---
 ### What is a Meta-Build System?
-* Lets you define an API for building/consuming your "Project"  
+* Lets you define an API for building your "Project"  
+* Is not a build system itself
 * Solves the problem of diversity in tooling
-* Many Teams, Many OS, Many Compilers, Many IDE
+* Many Dev, Many OS, Many Compilers, Many IDE
+* Allow Contributors or Users to Choose
 * Describe a C or C++ project in a generic language
 ---
 ### Don't Headers describe my project?
