@@ -35,7 +35,7 @@
 * Allow Contributors or Users to Choose
 * Describe a C or C++ project in a generic language
 ---
-### Don't Headers describe my project?
+### Don't my headers do that...
 * Headers describe the API of your C or C++ code
 * Build & compilation are a separate problem domain
 * Infinitely more complicated for native languages
@@ -92,10 +92,10 @@ add_executable(hello_cmake main.cpp)
 * Wide integration with tools and IDE's
 ---
 ### Problems to prepare for
-* Lots of bad/old examples in blog posts and OSS projects
+* Lots of bad/old examples in blog posts and OSS
 * Venerable Syntax, Widely Critizied, Very Ambiguous
 * Easy to Go Overboard and Become Golden Hammer 
-* Easy to accidentally build a monolithic super-project
+* Easy to accidentally build a super-project
 * Its not perfect
 ---
 ### Key Resources
