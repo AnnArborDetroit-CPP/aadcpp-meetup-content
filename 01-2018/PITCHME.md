@@ -35,7 +35,7 @@
 * Allow Contributors or Users to Choose
 * Describe a C or C++ project in a generic language
 ---
-### Don't my headers do that...
+### Don't headers describe a project?
 * Headers describe the API of your C or C++ code
 * Build & compilation are a separate problem domain
 * Infinitely more complicated for native languages
@@ -107,14 +107,13 @@ add_executable(hello_cmake main.cpp)
 * Outstanding for learning how to think about your project
 ---
 ### Lets Get Started !
-* Prerequisites
-	* Visual Studio 2017 15.3
-	* Github
----
-### Agenda
-* Walk through simple C++ project 
-	* Windows
-	* Linux using Windows Subsystem for Linux (WSL)
-* Demonstrate CTest
-* Demonstrate Visual Studio Integration
+* Agenda
+	* Walk through simple C++ project 
+		* Windows
+		* Linux / Windows Subsystem for Linux (WSL)
+	* Demonstrate CTest
+	* Demonstrate Visual Studio Integration
+
+* All examples taken from here: 
+	* https://github.com/ttroy50/cmake-examples
 
