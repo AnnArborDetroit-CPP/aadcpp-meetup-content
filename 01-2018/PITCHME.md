@@ -10,22 +10,25 @@
 ---
 ### OSS Lib of the Month
 * Cap'nProto
-    * data interchange format capability-based RPC system
+    * data interchange format
+	* capability-based RPC system
 	* Think JSON, except binary
 	* 20x Speed increase over CJSON
 	* Wire-Format + In-Memory Representation
-	* Used extensively at parent company Cloudflare.com 
+	* Used extensively Cloudflare.com 
 
 ---
 ### Questions
 * Any Local Projects or Announcements?
 * New ideas for topics
+	* Docker for C++
+	* Boost OpenSource Libraries
 ---
 ### Introduction: CMake
 * It's about sharing code
 ---
 ### What is a Meta-Build System?
-* CMake provides an API to your Library or Application
+* Lets you define an API for building/consuming your "Project"  
 * Solves the problem of diversity in tooling
 * Many Teams, Many OS, Many Compilers, Many IDE
 * Describe a C or C++ project in a generic language
