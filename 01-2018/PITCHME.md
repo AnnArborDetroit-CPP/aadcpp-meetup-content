@@ -28,7 +28,7 @@
 * It's about sharing code
 ---
 ### What is a Meta-Build System?
-* Lets you define an API for building your "Project"  
+* Lets you define an API for "building your project"  
 * Is not a build system itself
 * Solves the problem of diversity in tooling
 * Many Dev, Many OS, Many Compilers, Many IDE
