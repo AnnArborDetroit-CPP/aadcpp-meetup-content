@@ -1,4 +1,4 @@
-## Topic : CMake Meta-Build for C++ - Intro and Highlights
+## CMake Meta-Build System - Intro and Highlights
 *Sponsored By Mechanical Simulation*  
 ![Carsim Logo](/assets/image/logo/carsim.jpg)
 ---
