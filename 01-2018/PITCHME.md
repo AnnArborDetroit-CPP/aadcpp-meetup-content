@@ -37,11 +37,11 @@
 ---
 ### Don't Headers describe my project?
 * Headers describe the API of your C or C++ code
-* Build and Compilation are a separate problem domain from code
+* Build and Compilation are a separate problem domain
 * Infinitely more complicated for native languages
-* Compilers, Standard Libraries, OS, Arch, Compiler Flags
-* Shared vs Static Libraries, Code Generation, Unit Tests, Static Analysis
-* 3rd Party Libraries
+* Compilers, Standard Libs, OS, Arch, Compiler Flags
+* Shared vs Static Libraries, Code Generation
+* 3rd Party Libraries, Unit Tests, Static Analysis
 ---
 ### How it works
 * Detects your OS, Build systems and Compilers
