@@ -37,7 +37,7 @@
 ---
 ### Don't Headers describe my project?
 * Headers describe the API of your C or C++ code
-* Build and Compilation are a separate problem domain
+* Build & compilation are a separate problem domain
 * Infinitely more complicated for native languages
 * Compilers, Standard Libs, OS, Arch, Compiler Flags
 * Shared vs Static Libraries, Code Generation
@@ -45,8 +45,8 @@
 ---
 ### How it works
 * Detects your OS, Build systems and Compilers
-* Tries to guess at what combination to use (overridable)
-* Reads your file, Generates other Files
+* Guesses which combination to use (overridable)
+* Reads your CMakeLists.txt file, Generates build files
 
 `CMakeLists.txt` --->  `cmake .` ---> `some.vcxproj`
 
