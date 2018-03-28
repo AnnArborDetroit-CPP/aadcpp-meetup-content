@@ -6,6 +6,7 @@
 * Thanks to Mechanical Simulation!
 * Starting in April - New Day of Month
 
+---
 ### C++ Announcements
 * Jacksonville Standards Committee Meeting
     * Tooling Study Group (SG15) Progress
