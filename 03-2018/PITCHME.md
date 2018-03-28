@@ -1,6 +1,6 @@
 ## Parsing Binary Structures - Intro to Kaitai Struct
 *Sponsored By Mechanical Simulation*  
-![Carsim Logo](/assets/image/logo/carsim.jpg)
+![Carsim Logo](/assets/image/logo/carsim.png)
 ---
 ### Local Announcements
 * Thanks to Mechanical Simulation!
@@ -34,4 +34,8 @@
 	* Docker for C++
 	* Boost OpenSource Libraries
     * Poco OpenSource Libraries
+
 ---
+### Welcome Chris Cadwallader
+* Kaitai Struct
+* https://github.com/ApatheticsAnonymous/Kaitai-introduction

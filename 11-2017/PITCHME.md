@@ -1,6 +1,6 @@
 ## Topic : Algorithms And Data Structures Of Cryptocurrency
 *Sponsored By Mechanical Simulation*  
-![Carsim Logo](https://raw.githubusercontent.com/AnnArborDetroit-CPP/aadcpp-meetup-content/master/assets/image/logo/carsim.jpg)
+![Carsim Logo](https://raw.githubusercontent.com/AnnArborDetroit-CPP/aadcpp-meetup-content/master/assets/image/logo/carsim.png)
 ---
 ### Announcements
 * Thanks to Mechanical Simulation! 
