@@ -1,5 +1,5 @@
 ## Factory Design Pattern
-*Creating Objects without Exposing Logic
+*Creating Objects without Exposing Logic 
 *Sponsored By Mechanical Simulation*  
 ![Carsim Logo](/assets/image/logo/carsim.png)
 ---
