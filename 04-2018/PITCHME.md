@@ -1,5 +1,5 @@
 ## Factory Design Pattern
-*Creating Objects without Exposing the Logic
+*Creating Objects without Exposing Logic
 *Sponsored By Mechanical Simulation*  
 ![Carsim Logo](/assets/image/logo/carsim.png)
 ---
@@ -20,7 +20,6 @@
 ### OSS Lib of the Month
 * Cinder (libcinder.org)
     - https://libcinder.org/docs/reference/index.html
-	- 
     
 ---
 ### Questions
