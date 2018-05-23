@@ -175,16 +175,6 @@ CMD ["./myapp"]
 * Compile with our Linux Container
 * Compile with a Dockcross Container (if time)
 
-
----
-### Demo Time
-* Build a windows container with MSVC
-* Build a linux container with GCC
-* Take some C++ code
-* Compile with our Windows Container
-* Compile with our Linux Container
-* Compile with a Dockcross Container (if time)
-
 ---
 ### Dockcross containers used
 * dockcross/windows-x64
