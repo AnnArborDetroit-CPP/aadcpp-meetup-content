@@ -1,5 +1,5 @@
 ## Docker and C++
-### A new world for cross-compiling*
+#### A new world for cross-compiling
 *Sponsored By Mechanical Simulation*  
 ![Carsim Logo](/assets/image/logo/carsim.png)
 ---
@@ -12,13 +12,14 @@
     * Jetbrains Trip report: 
     * https://blog.jetbrains.com/clion
 * VCPKG Supports Linux and Mac
+* Visual Studio Live Share Extension
 * Herbceptions - Value-Based Exception Proposal
 * Gradle C++ Support in CLion
 * JFrog SwampUP - Packaing C++ with Conan Track
 
 ---
 ### OSS Lib of the Month
-* Emscripen
+* Emscripten
     * https://github.com/kripken/emscripten
     * Emscripten: An LLVM-to-JavaScript Compiler
     * Tanker.io is replacing JS codebase with C++
@@ -47,20 +48,49 @@
 *A cross compiler is a compiler capable of creating executable code for a platform other than the one on which the compiler is running. For example, a compiler that runs on a Windows 7 PC but generates code that runs on Android smartphone is a cross compiler.*
 
 ---
-### Definition : Containers (Docker)
-*A container image is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings.*
+### Definition : Container Image
+*A container image is a lightweight, stand-alone, executable package of a **piece of software** that includes everything needed to run it: code, runtime, system tools, system libraries, settings.*
 
 ---
 ### Compiling with Containers
-* Our "application" is a C/C++ compiler
-* Containers exist for many platforms
+* Our executable "piece of software" is:
+    * build system, compiler, related env vars
+* Many such C/C++ containers exist on Dockerhub
 * Windows + linux container ~= cross-compilation
 
 ---
-![Carsim Logo](/assets/image/docker-host-graphic.png)
+### Docker Overview
+![Docker Host](/assets/image/docker-host-graphic.png)
 
 ---
-![Carsim Logo](/assets/image/wcol-architecture.png)
+### Windows Container on Windows (WCOW)
+![WCOW](/assets/image/wcow-architecture.png)
+
+---
+### Linux Container on Windows   (LCOW)
+![LCOW](/assets/image/lcow-architecture.png)
+
+---
+### Windows Container on Linux
+* Not Supported
+
+---
+### Docker Basics
+* On Linux - Shares Kernel, Any Distro/Arch
+* On Windows - Much more complex
+    * Windows Containers share Windows Kernel
+    * Linux Containers share Linux Kernel
+    * Previously: Linux Kernel Provided by VM
+    * Previously: Could run Windows OR Linux
+    * Linux containers now use "LinuxKit"
+    * Still requires HyperV, but no VM
+    * Linux and Windows side-by-side
+
+---
+### Containers on macOS
+* Started using a VM for Linux Kernel
+* Now uses macOS Hypervisor framework
+* Similar to Windows
 
 ---
 ### Windows Subsystem for Linux (WSL)
@@ -70,31 +100,9 @@
 * Can run docker in WSL
 
 ---
-![Carsim Logo](/assets/image/linux-subsystem-for-windows.png)
-
----
-### Docker Basics
-* On Linux - Shares Kernel, Any Distro/Arch
-    * Processes all appear under `top`
-    * Multiple options for segregating access
-* On Windows - Much more complex
-    * Windows Containers share Windows Kernel
-    * Linux Containers share Linux Kernel
-    * Kernels provided by Hyper-V
-    * Can only run Windows OR Linux
+### Linux Subsystem for Windows
+![WSL](/assets/image/wsl-architecture.png)
     
----
-### Docker Basics
-* On Linux - Shares Kernel, Any Distro/Arch
-* On Windows - Much more complex
-    * Windows Containers share Windows Kernel
-    * Linux Containers share Linux Kernel
-    * ~Linux Kernel Provided by MobyLinux VM~
-    * ~Can only run Windows OR Linux~
-    * Linux containers now use "LinuxKit"
-    * Still requires HyperV, but no VM
-    * Linux and Windows side-by-side
-
 ---
 ### Docker History
 * Written in Go
@@ -106,7 +114,7 @@
     * Mitigate depdendency hell
 
 ---
-### Common Docker Uses - Web Software
+### Common Uses - Web Software
 * Ease developer collaboration
 * Has become a standard "runtime unit"
 * Alternative to one-VM-per-app-instance
@@ -115,19 +123,24 @@
 * Continuous integration - automated builds
 
 ---
-### Common Docker Uses - Native Software
+### Common Uses - Native Software
 * Cross-building native applications
     * Locally on developer machine
     * Continuous integration
     
 ---
 ### Docker Workflow
-* Write (or copy) a recipe: "Dockerfile"
-* `docker build` : creates an image
-* `docker run` : starts a container
-* `docker push` : upload to dockerhub
-OR
-* `docker run` existing image from dockerhub
+* Write (or copy) a recipe: "Dockerfile" 
+* Create, use, upload and share
+```
+docker build ...
+docker run ...
+docker push ...
+```
+* OR use an existing image from dockerhub
+```
+docker run ...
+``` 
 
 ---
 ### Dockerfile Example
@@ -155,13 +168,69 @@ CMD ["./myapp"]
 
 ---
 ### Demo Time
-* Choose an OSS library on Github
-* Compile with Windows Container
-* Compile with Linux Container
-* Connect with Visual Studio for Debug
+* Build a windows container with MSVC
+* Build a linux container with GCC
+* Take some C++ code
+* Compile with our Windows Container
+* Compile with our Linux Container
+* Compile with a Dockcross Container (if time)
 
 
+---
+### Demo Time
+* Build a windows container with MSVC
+* Build a linux container with GCC
+* Take some C++ code
+* Compile with our Windows Container
+* Compile with our Linux Container
+* Compile with a Dockcross Container (if time)
 
+---
+### Dockcross containers used
+* dockcross/windows-x64
+* dockcross/android-arm
+* dockcross/browser-asmjs
 
+---
+### Build Images from Dockerfile
+While in directory with Dockerfile  
+* See directory: win17134.1-vctools
+```
+docker build -t msvc-builder .
+```
+* See directory: ubuntuartful-gcc72
+```
+docker build -t ubuntu-builder .
+```
+---
+### Get Interactive Shell to Container
 
-
+*Note - Lines are manually wrapped*
+* Linux
+```
+docker run --rm -it -v %CD%:/work 
+<image_name> /bin/bash
+```
+* Windows
+```
+docker run --rm -it
+-v %CD%:C:\users\ContainerAdministrator 
+<image_name> cmd
+```
+*Note - **cmd** can be replaced with **powershell***
+---
+### Build App In Container
+Here, we use the container like a standalone executable, (the way it was intended!).  
+```
+set IMAGE_NAME=android-arm64
+set CMD=docker run --rm
+set CMD=%CMD% --platform=linux
+set CMD=%CMD% -v %CD%:/work
+set CMD=%CMD% dockcross/%IMAGE_NAME%
+set CMD=%CMD% /bin/sh -c
+set CMD=%CMD% "mkdir build-%IMAGE_NAME% &&
+set CMD=%CMD% cd build-%IMAGE_NAME% &&
+set CMD=%CMD% cmake .. &&
+set CMD=%CMD% cmake --build ."
+%CMD%
+```
