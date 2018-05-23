@@ -7,6 +7,12 @@
 * Thanks to Mechanical Simulation!
 
 ---
+### Slides and Content available at...
+* As a slideshow: 
+    * https://gitpitch.com/AnnArborDetroit-CPP/aadcpp-meetup-content/master?p=05-2018
+* Raw content, with example files:
+    * https://github.com/AnnArborDetroit-CPP/aadcpp-meetup-content/tree/master/05-2018
+---
 ### C++ Announcements
 * CPP Now - Aspen
     * Jetbrains Trip report: 
