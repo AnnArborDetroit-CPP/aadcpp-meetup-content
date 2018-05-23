@@ -44,10 +44,9 @@
 
 ---
 ## Disclaimer
-* Not actually "cross-compiling"
-* Docker blurs the lines a bit
-* Something functionally similar... better?
-* Can replace some need for cross-compilation
+* Docker not always technically "cross-compiling"
+* Sometimes it is, Docker blurs the lines a bit
+* Can eliminate the need for some cross-compilers
 
 ---
 ### Definition : Cross-Compiling
@@ -150,6 +149,7 @@ docker run ...
 
 ---
 ### Dockerfile Example
+* A trivial example of commands.
 ```Docker
 FROM gcc:4.9
 COPY . /usr/src/myapp
@@ -160,6 +160,7 @@ CMD ["./myapp"]
 
 ---
 ### Dockerhub for C++
+* Hundreds of pre-built images. Examples:
 * https://hub.docker.com/_/gcc/
 * https://hub.docker.com/r/rsmmr/clang/
 * https://hub.docker.com/r/burningdaylight/docker-mingw-qt5/
@@ -169,6 +170,7 @@ CMD ["./myapp"]
 * Collection of images with GCC and CMake
 * Each supports different "niche" platform 
 * Largely based on QEMU emulators
+* Includes MinGW images : compile for Windows 
 * https://hub.docker.com/r/dockcross/
 * https://github.com/dockcross/dockcross
 
