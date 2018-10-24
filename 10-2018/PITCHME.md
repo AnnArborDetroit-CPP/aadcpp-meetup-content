@@ -68,12 +68,11 @@
 ---
 ## Hot Topics Part 2 of 2
 * Language Future : Concepts, Metaclasses, Contracts
-* Language Now : C++17 in practice, Legacy Challenges
+* Language Now : C++17 in practice, Legacy Interop
 * Exceptions : Many Options, Performance, Usability
 * CTRE : Compile Time Regular Expressions 
 ---
-##
-Time to Meet your Neighbor
+## Time to Meet your Neighbor
 
 
     
