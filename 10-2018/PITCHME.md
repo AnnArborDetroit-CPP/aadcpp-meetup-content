@@ -45,32 +45,32 @@
 ## CPPCon 2018 Trip Report
 ---
 ## Personal Notes
-### Thanks to MechSim/JFrog for Sponsoring Trip
-### Met 3 People from Michigan
-### Many Great Lightning Talks
-### Substantial Growth : New Venue Next Year
-### Lots of Scientific & Super Computing Talk
-### Student Volunteer : Get Involved : Go Free
+* Thanks to MechSim/JFrog for Sponsoring Trip
+* Met 3 People from Michigan
+* Many Great Lightning Talks
+* Substantial Growth : New Venue Next Year
+* Lots of Scientific & Super Computing Talk
+* Student Volunteer : Get Involved : Go Free
 ---
 ## Highlighted Talks
-### What Could Possible Go Wrong (exceptions)
-### Nano-Coroutines to the Rescue
-### Source Instrumentation and Monitoring
-### Understanding Optimizers
-### High-Radix Concurrent C++
+* What Could Possible Go Wrong (exceptions)
+* Nano-Coroutines to the Rescue
+* Source Instrumentation and Monitoring
+* Understanding Optimizers
+* High-Radix Concurrent C++
 ---
 ## Hot Topics Part 1 of 2
-### Making C++ Accessible and Ergonomic for new users
-### Tooling : "ToolTime" : Build Systems and Dependencies
-### Advanced and low-level compiler-related discussions
-### Community, Code of Conduct, Inclusion
-### Secure Code : Meltdown/Spectre : Closing Panel
+* Making C++ Accessible and Ergonomic for new users
+* Tooling : "ToolTime" : Build Systems and Dependencies
+* Advanced and low-level compiler-related discussions
+* Community, Code of Conduct, Inclusion
+* Secure Code : Meltdown/Spectre : Closing Panel
 ---
 ## Hot Topics Part 2 of 2
-### Language : Upcoming: Concepts, Metaclasses, Contracts
-### Language : Existing: C++17 in practice, Legacy Challenges
-### Exceptions : Numerous Options, Performance, Usability
-### CTRE : Compile Time Regular Expressions 
+* Language : Upcoming: Concepts, Metaclasses, Contracts
+* Language : Existing: C++17 in practice, Legacy Challenges
+* Exceptions : Numerous Options, Performance, Usability
+* CTRE : Compile Time Regular Expressions 
 ---
 ##
 Time to Meet your Neighbor
