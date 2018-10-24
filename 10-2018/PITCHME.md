@@ -5,36 +5,30 @@
 ---
 ### Local Announcements
 * Thanks to Mechanical Simulation!
-
 ---
 ### Links to Content
 * This Presentation: 
     * https://gitpitch.com/AnnArborDetroit-CPP/aadcpp-meetup-content/master?p=10-2018
 * List of many CPPCon 2018 Trip Reports
     * https://cppcon.org/
-
 ---
 ### C++ Community Announcements
 * https://isocpp.org/
 * CUDA 10 Supports Visual Studio 2017 Updates
-
 ---
 ### Local Projects or Announcements
-* ???
 * New ideas for topics?
     * Machine Learning in C++
     * Standard Algorithms
 	* Design Patterns
-    * Webassembly
-    
+    * Webassembly  
 ---
-### Companies Hiring
+### Local Job Postings
 * Parabricks (A2) (Senior)
 * Quantum Signal 
 * ControlTec (Plymouth)
 * Nexient (A2)
 * Radiant Solutions
-
 ---
 ### OSS Libs of the Month
 * yaml-cpp : yaml parser/emitter
@@ -72,7 +66,10 @@
 * Exceptions : Many Options, Performance, Usability
 * CTRE : Compile Time Regular Expressions 
 ---
-## Time to Meet your Neighbor
+## Networking Time
+* Meet your Neighbor
+* Introduce yourself
+* Explain what you use C++ for
 
 
     
