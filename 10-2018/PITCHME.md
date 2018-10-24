@@ -3,6 +3,18 @@
 *Sponsored By Mechanical Simulation*  
 ![Carsim Logo](/assets/image/logo/carsim.png)
 ---
+what os do you develop on?
+https://www.strawpoll.me/16709538
+
+what ide/editor do you use?
+https://www.strawpoll.me/16709546
+
+what is your level of experience with C++?
+https://www.strawpoll.me/16709530
+
+what types of applications do you build with C++?
+https://www.strawpoll.me/16709524
+---
 ### Local Announcements
 * Thanks to Mechanical Simulation!
 ---
@@ -20,8 +32,7 @@
 * New ideas for topics?
     * Machine Learning in C++
     * Standard Algorithms
-	* Design Patterns
-    * Webassembly  
+	* Basic Design Patterns
 ---
 ### Local Job Postings
 * Parabricks (A2) (Senior)
