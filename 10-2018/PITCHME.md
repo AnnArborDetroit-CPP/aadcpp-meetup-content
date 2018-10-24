@@ -62,8 +62,8 @@
 ## Hot Topics Part 1 of 2
 * Making C++ Accessible and Ergonomic for new users
 * "ToolTime" : Build Systems & Dependencies
-* Advanced low-level compiler-related discussions
 * Community, Code of Conduct, Inclusion
+* Advanced low-level compiler-related discussions
 * Secure Code : Meltdown/Spectre : Closing Panel
 ---
 ## Hot Topics Part 2 of 2
