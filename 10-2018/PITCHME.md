@@ -61,15 +61,15 @@
 ---
 ## Hot Topics Part 1 of 2
 * Making C++ Accessible and Ergonomic for new users
-* Tooling : "ToolTime" : Build Systems and Dependencies
-* Advanced and low-level compiler-related discussions
+* "ToolTime" : Build Systems & Dependencies
+* Advanced low-level compiler-related discussions
 * Community, Code of Conduct, Inclusion
 * Secure Code : Meltdown/Spectre : Closing Panel
 ---
 ## Hot Topics Part 2 of 2
-* Language : Upcoming: Concepts, Metaclasses, Contracts
-* Language : Existing: C++17 in practice, Legacy Challenges
-* Exceptions : Numerous Options, Performance, Usability
+* Language Future : Concepts, Metaclasses, Contracts
+* Language Now : C++17 in practice, Legacy Challenges
+* Exceptions : Many Options, Performance, Usability
 * CTRE : Compile Time Regular Expressions 
 ---
 ##
