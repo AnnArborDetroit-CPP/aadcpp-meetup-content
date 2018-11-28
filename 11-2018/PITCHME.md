@@ -1,5 +1,5 @@
-## CPPCon 2018
-#### Rapidcheck, Property Based Testing Framework in C++
+## Rapidcheck
+#### A Property Based Testing Framework in C++
 *Sponsored By Mechanical Simulation*  
 ![Carsim Logo](/assets/image/logo/carsim.png)
 ---
