@@ -14,6 +14,8 @@
 ---
 ### C++ Community Announcements
 * https://isocpp.org/
+* CLION 2018.3 Released
+    * https://www.youtube.com/watch?v=5PQ2Xp4Q3pw&t=4s
 * San Diego Committee Meeting
 * RangesTS Officially Accepted C++ 20
 * San Diego Trip Reports:
